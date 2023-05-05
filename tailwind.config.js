@@ -24,6 +24,11 @@ export default {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    plugin(function({addVariant,addComponents,addBase}){
+      addVariant("children","&>*");
+      addBase()
+    })
+  ],
 }
 
