@@ -27,7 +27,36 @@ export default {
   plugins: [
     plugin(function({addVariant,addComponents,addBase}){
       addVariant("children","&>*");
-      addBase()
+
+      addComponents({
+        '.year-text':{
+          fontWeight:'700',
+          fontSize:'12.5rem',
+          lineHeight:'9.375rem',
+        },
+
+        '.subhead1':{
+          fontSize:'0.9375rem',
+          lineHeight:'1.1875rem',
+        }
+      });
+
+      addBase({
+        'h1':{
+          fontSize:'3.5rem',
+          lineHeight:'4rem',
+        },
+
+        'h2':{
+          fontSize:'1.5rem',
+          lineHeight:'1.8125rem',
+        },
+
+        'h3':{
+          fontSize:'1.125rem',
+          lineHeight:'1.375rem'
+        }
+      });
     })
   ],
 }
