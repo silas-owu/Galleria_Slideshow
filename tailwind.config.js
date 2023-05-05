@@ -19,8 +19,8 @@ export default {
       'black':'#000',
       'white':'#fff',
       'boulder':'#7D7D7D',
-      // #E5E5E5
-      // #F3F3F3
+      'mercury':'#E5E5E5',
+      'concrete':'#F3F3F3'
     },
     extend: {},
   },
