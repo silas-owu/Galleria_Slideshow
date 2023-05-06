@@ -56,6 +56,10 @@ export default {
           lineHeight:'0.6875rem',
           letterSpacing:'0.125rem',
         },
+
+        '.artHistory':{
+        
+        }
       });
 
       addBase({
