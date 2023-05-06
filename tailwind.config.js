@@ -38,7 +38,24 @@ export default {
         '.subhead1':{
           fontSize:'0.9375rem',
           lineHeight:'1.1875rem',
-        }
+        },
+
+        '.subhead2':{
+          fontSize:'0.8125rem',
+          lineHeight:'1.0625rem',
+        },
+
+        '.link1':{
+          fontSize:'0.75rem',
+          lineHeight:'0.9375rem',
+          letterSpacing:'0.15625rem',
+        },
+        
+        '.link2':{
+          fontSize:'0.5625rem',
+          lineHeight:'0.6875rem',
+          letterSpacing:'0.125rem',
+        },
       });
 
       addBase({
