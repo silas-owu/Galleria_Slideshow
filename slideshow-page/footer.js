@@ -1,6 +1,6 @@
 document.querySelector('#footer').innerHTML = `
 
-    <div class="bg-amber-600">
+    <div class="bg-[#5ca]">
     
     </div>
 `;

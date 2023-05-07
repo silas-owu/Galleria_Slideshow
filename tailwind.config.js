@@ -9,8 +9,8 @@ export default {
   ],
   theme: {
     screens: {
-      'mobile':{'min':'12.5em', 'max':'26.6875em'},
-      'tablet':{'min':'26.6875em', 'max':'48em'},
+      'mobile':{'min':'12.5em', 'max':'26.75em'},
+      'tablet':{'min':'26.75em', 'max':'48em'},
       'laptop':{'min':'48.125em'}
     },
     // colors:{},
@@ -50,7 +50,7 @@ export default {
           lineHeight:'0.9375rem',
           letterSpacing:'0.15625rem',
           height:'0.6875rem',
-          width:'8.rem',
+          width:'9rem',
          },
         
         '.link2':{
