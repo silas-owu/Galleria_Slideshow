@@ -10,7 +10,7 @@ export default {
   theme: {
     screens: {
       'mobile':{'min':'12.5em', 'max':'26.6875em'},
-      'tablet': {'min':'26.6875em', 'max':'48em'},
+      'tablet':{'min':'26.6875em', 'max':'48em'},
       'laptop':{'min':'48.125em'}
     },
     // colors:{},
@@ -49,7 +49,9 @@ export default {
           fontSize:'0.75rem',
           lineHeight:'0.9375rem',
           letterSpacing:'0.15625rem',
-        },
+          height:'0.6875rem',
+          width:'8.rem',
+         },
         
         '.link2':{
           fontSize:'0.5625rem',
@@ -57,9 +59,7 @@ export default {
           letterSpacing:'0.125rem',
         },
 
-        '.artHistory':{
         
-        }
       });
 
       addBase({
