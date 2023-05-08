@@ -2,7 +2,7 @@ document.querySelector('#footer').innerHTML = `
 
     <div class=" flex flex-col">
         <div class="bg-mercury w-full h-[0.0625rem]"></div>
-        <div class="flex flex-row mobile:mx-6  mobile:gap-[10.5rem]" >
+        <div class="flex flex-row  my-4 mobile:mx-6  mobile:gap-[10.5rem]" >
             <div class="mobile:w-[5.8125rem] mobile:h-[2.375rem] bg-[#b9A]">
                 <h3></h3>
                 <p></p>
