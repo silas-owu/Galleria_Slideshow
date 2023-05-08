@@ -3,7 +3,10 @@ document.querySelector('#footer').innerHTML = `
     <div class=" flex flex-col">
         <div class="bg-mercury w-full h-[0.0625rem]"></div>
         <div class="flex flex-row mobile:mx-6  mobile:gap-[10.5rem]" >
-            <div class="mobile:w-[5.8125rem] mobile:h-[2.375rem] bg-[#b9A]"></div>
+            <div class="mobile:w-[5.8125rem] mobile:h-[2.375rem] bg-[#b9A]">
+                <h3></h3>
+                <p></p>
+            </div>
             <div class="mobile:w-[3.55rem] mobile:h-[1rem] self-center flex flex-row mobile:gap-6">
                 <div class="fill-none">
                     <svg width="26" height="24" xmlns="http://www.w3.org/2000/svg"><g stroke="#000" fill="none" fill-rule="evenodd"><path d="M24.166 1.843L3.627 12.113l20.539 10.269V1.843z" stroke-width="2"/>
