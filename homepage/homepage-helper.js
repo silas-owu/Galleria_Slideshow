@@ -18,7 +18,12 @@ $(function() {
             // thumbnails from the GalleriaData
             const homepageImages = galleriaData.map( item => {
                 let smallImage = item.images['thumbnail'];
-                // console.log(smallImage);
+                let imageTitle = item.name;
+                let imageArtist = item.artist['name'];
+
+
+                // console.log(imageTitle);
+                // console.log(imageArtist);
                 //create a div container for the small image
                 const $imgContainer = $('<div>');
                 const $img = $('<img />');
@@ -26,8 +31,10 @@ $(function() {
                 //creating h3 and p element for the images
                 // and inserting the title and artist text.
                 const $imageTitle = $('<h3>');
-                $imageTitle.text
-                const $imageArtist = $('<p>')
+                $imageTitle.textContent = `${imageTitle}`;
+
+                const $imageArtist = $('<p>');
+                $imageArtist.textContent = `${imageArtist}`
 
                 $img.attr('src', smallImage);
                 
