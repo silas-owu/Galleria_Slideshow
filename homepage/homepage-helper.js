@@ -31,14 +31,17 @@ $(function() {
                 //creating h3 and p element for the images
                 // and inserting the title and artist text.
                 const $imageTitle = $('<h3>');
-                $imageTitle.textContent = `${imageTitle}`;
+                $imageTitle.text(imageTitle);
 
                 const $imageArtist = $('<p>');
-                $imageArtist.textContent = `${imageArtist}`
+                $imageArtist.text(imageArtist);
 
                 $img.attr('src', smallImage);
                 
+                
                 $imgContainer.append($img);
+                $imgContainer.append($imageTitle);
+                $imgContainer.append($imageArtist);
                 return $imgContainer;
             });
 
