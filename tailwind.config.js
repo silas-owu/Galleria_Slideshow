@@ -35,6 +35,7 @@ export default {
           fontWeight:'700',
           fontSize:'12.5rem',
           lineHeight:'9.375rem',
+          
         },
 
         '.subhead1':{
