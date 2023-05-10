@@ -1,3 +1,5 @@
+import galleriaData from "../public/data.json";
+
 $(function() {
     //A function to pass images from data.json
     //into homepage's main content.
@@ -7,11 +9,11 @@ $(function() {
 
 
     //Created a fetch request parsing data.json from public folder
-    fetch('../data.json')
-        .then( response => response.json())
-        .then( data => {
+    // fetch('../data.json')
+        // .then( response => response.json())
+        // .then( data => {
             //GalleriaData recieved as an array of objects
-            const galleriaData = data;
+            // const galleriaData = data;
 
             //A function recieveing thumbnail images from gallleriaData
             // then passes them through the DOM to the targeted id appending
@@ -52,6 +54,6 @@ $(function() {
             $homepageGallery.append(homepageImages);
 
             // console.log(smallImages);
-        }).catch( err => { console.log(err)});
+        // }).catch( err => { console.log(err)});
      
 });
