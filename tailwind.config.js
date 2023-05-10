@@ -8,12 +8,14 @@ export default {
     '*.js'
   ],
   theme: {
+    fontFamily:{
+      'libre':['Libre Baskerville', 'serif']
+    },
     screens: {
       'mobile':{'min':'12.5em', 'max':'26.75em'},
       'tablet':{'min':'26.75em', 'max':'48em'},
       'laptop':{'min':'48.125em'}
     },
-    // colors:{},
     colors:{
       //primary colors
       'black':'#000',
@@ -63,6 +65,10 @@ export default {
       });
 
       addBase({
+        'body':{
+
+        },
+
         'h1':{
           fontSize:'3.5rem',
           lineHeight:'4rem',
@@ -74,6 +80,7 @@ export default {
         },
 
         'h3':{
+          color:'#fa2',
           fontSize:'1.125rem',
           lineHeight:'1.375rem'
         }

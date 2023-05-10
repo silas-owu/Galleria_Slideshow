@@ -30,11 +30,13 @@ $(function() {
 
                 //creating h3 and p element for the images
                 // and inserting the title and artist text.
-                const $imageTitle = $('<h3>');
+                const $imageTitle = $('<h2>');
                 $imageTitle.text(imageTitle);
+                $imageTitle.addClass('mt-[-6rem] ml-8 text-white font-libre font-bold w-[12rem] bg-gradient-to-b from-transparent to-black')
 
                 const $imageArtist = $('<p>');
                 $imageArtist.text(imageArtist);
+                $imageArtist.addClass('ml-8  font-libre text-white text-opacity-75 bg-gradient-to-b from-transparent to-black')
 
                 $img.attr('src', smallImage);
                 
