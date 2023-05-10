@@ -3,20 +3,35 @@ import galleriaData from '../public/data.json'
 
 
 $(function(){
-    const slideshowDetails = galleriaData.map(item => {
-        let smallImage = item.images['hero'].small;
-        let imageTitle = item.name;
-        let artistName = item.artist['name'];
-        let artistImage = item.artist['image'];
-        let artYear = item.year;
-        let artDesc = item.description;
+    let currentIndex = 0;
+    
+    const slideshowDetails = galleriaData.forEach(item => {
+        let currentArt = galleriaData[currentIndex];
+        //Assign corresponding values from the galleriaData.json
+        let smallImage = currentArt.images['hero'].small;
+        let imageTitle = currentArt.name;
+        let artistName = currentArt.artist['name'];
+        let artistImage = currentArt.artist['image'];
+        let artYear = currentArt.year;
+        let artDesc = currentArt.description;
+        let artSource = currentArt.source;
 
+        //Appending content to the corresponding
+        //html element
+        // const $img = $('<img />')
+        // $img.attr('src',smallImage);
+        // $('#slidepage-image').append($img)
         console.log(smallImage);
+        // // $('#slidepage-image').attr('src',smallImage);
+
+        // $('#image-link').att/* r('href',)
+        /* console.log(smallImage);
         console.log(imageTitle);
         console.log(artistName);
         console.log(artistImage);
         console.log(artYear);
         console.log(artDesc);
+        console.log(artSource); */
 
 
 
