@@ -3,59 +3,83 @@ import galleriaData from '../public/data.json'
 
 
 $(function(){
-    let currentIndex = 2;
+    let currentIndex = 0;
 
     
-    // const slideshowDetails = galleriaData.find(item => {
-        let currentArt = galleriaData[currentIndex];
+        const galleriaDataDisplay = () =>{
+                const currentArt = galleriaData[currentIndex];
 
-        //Assign corresponding values from the galleriaData.json
-        let smallImage = currentArt.images['hero'].small;
-        let imageTitledata = currentArt.name;
-        let artistNamedata = currentArt.artist['name'];
-        let artistImagedata = currentArt.artist['image'];
-        let artYeardata = currentArt.year;
-        let artDescdata = currentArt.description;
-        let artSourcedata = currentArt.source;
+                //Assign corresponding values from the galleriaData.json
+                let smallImage = currentArt.images['hero'].small;
+                let imageTitledata = currentArt.name;
+                let artistNamedata = currentArt.artist['name'];
+                let artistImagedata = currentArt.artist['image'];
+                let artYeardata = currentArt.year;
+                let artDescdata = currentArt.description;
+                let artSourcedata = currentArt.source;
 
-        // Creating corresponding/Missing Dom elements and assigning respective values
-        const  $imageTitle = $('<h3>')
-        $imageTitle.text(imageTitledata)
+                  // Clear previous content before appending new content
+                $('#image-details').empty();
+                $('#artist-image').empty();
+                $('#art-year').empty();
+                $('#art-desc').empty();
+                $('#slidepage-image').empty();
 
-        const $artistName = $('<p>')
-        $artistName.text(artistNamedata)
+                // Creating corresponding/Missing Dom elements and assigning respective values
+                const  $imageTitle = $('<h3>')
+                $imageTitle.text(imageTitledata)
 
-        const $artistImage = $('<img/>')
-        $artistImage.attr('src', artistImagedata)
+                const $artistName = $('<p>')
+                $artistName.text(artistNamedata)
 
-        const $artYear = $('<h1>')
-        $artYear.text(artYeardata);
-        $artYear.addClass('text-[6.25rem] text-concrete font-bold font-libre text-left')
+                const $artistImage = $('<img/>')
+                $artistImage.attr('src', artistImagedata)
 
-        const $artDesc = $('#art-desc')
-        $artDesc.text(artDescdata)
+                const $artYear = $('<h1>')
+                $artYear.text(artYeardata);
+                $artYear.addClass('text-[6.25rem] text-concrete font-bold font-libre text-left')
 
-        const $artSource = $('#image-link')
-        $artSource.attr('href', artSourcedata)
-        $artSource.text('GO TO SOURCE')
+                const $artDesc = $('#art-desc')
+                $artDesc.text(artDescdata)
 
+                const $artSource = $('#image-link')
+                $artSource.attr('href', artSourcedata)
+                $artSource.text('GO TO SOURCE')
 
-        //target corresponding DOM element to append their respective elements
-        $('#image-details').append( $imageTitle,$artistName );
-        $('#artist-image').append($artistImage)
-        $('#art-year').append($artYear).addClass('pt-[1.2rem]')
-        $('#art-desc').append($artDesc).addClass('font-libre font-bold leading-[1.75rem] text-[0.875rem] text-boulder ')
-    
+                $('#footer-h3').text(imageTitledata)
 
-        //Appending content to the corresponding
-        //html element
-        const $img = $('<img />')
-        $img.attr('src',smallImage);
-        $img.addClass('-mt-10')
-        $('#slidepage-image').append($img)
-        // // $('#slidepage-image').attr('src',smallImage);
-    // });
+                $('#footer-p').text(artistNamedata)
+
+                //target corresponding DOM element to append their respective elements
+                $('#image-details').append( $imageTitle,$artistName );
+                $('#artist-image').append($artistImage)
+                $('#art-year').append($artYear).addClass('pt-[1.2rem]')
+                $('#art-desc').append($artDesc).addClass('font-libre font-bold leading-[1.75rem] text-[0.875rem] text-boulder ')
+        
+
+                //Appending content to the corresponding
+                //html element
+                const $img = $('<img />')
+                $img.attr('src',smallImage);
+                $img.addClass('-mt-10')
+                $('#slidepage-image').append($img)
+        }
+
+        $('#back-btn').on('click',()=>{
+                currentIndex = Math.max(currentIndex - 1, 0);
+                galleriaDataDisplay();
+        })
+
+        $('#forward-btn').on('click',() => {
+                currentIndex = Math.min(currentIndex + 1, galleriaData.length - 1);
+                galleriaDataDisplay();
+        });
+
+        galleriaDataDisplay();
 });
+
+
+
 // console.log(smallImage);
 
         // $('#image-link').att/* r('href',)
