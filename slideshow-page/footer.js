@@ -5,9 +5,9 @@ document.querySelector('#footer').innerHTML = `
             <div class="bg-black w-[1.5625rem] h-[0.0625rem]"></div>
         </div>
         <div class="flex flex-row mobile:my-4 border-2 border-dashed border-[#fa7f0c] mobile:mx-6 mobile:justify-between  mobile:h-[2.4375rem]" >
-            <div class="mobile:w-[5.8125rem] mobile:h-[2.375rem] bg-[#b9A]">
-                <h3 id="footer-h3"></h3>
-                <p id="footer-p"></p>
+            <div class=" mobile:h-[2.375rem] mobile:flex mobile:flex-col mobile:gap-y-[0.5rem]">
+                <h3 id="footer-h3" class="font-libre font-bold text-[0.875rem] leading-[1.085rem] text-black"></h3>
+                <p id="footer-p" class="font-libre text-[0.625rem] leading-[0.775rem]"></p>
             </div>
             <div class="mobile:w-[4rem] mobile:h-[1rem] mobile:my-2 flex flex-row  mobile:gap-6">
                 <div id="back-btn" class="fill-none w-[1.04875rem]">

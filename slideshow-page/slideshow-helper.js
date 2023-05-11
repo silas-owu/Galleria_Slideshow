@@ -28,9 +28,11 @@ $(function(){
                 // Creating corresponding/Missing Dom elements and assigning respective values
                 const  $imageTitle = $('<h3>')
                 $imageTitle.text(imageTitledata)
+                $imageTitle.addClass('text-[1.5rem] font-bold leading-[1.8125rem] font-libre text-black')
 
                 const $artistName = $('<p>')
                 $artistName.text(artistNamedata)
+                $artistName.addClass('text-[0.9375rem] leading-[1.1625rem] font-libre')
 
                 const $artistImage = $('<img/>')
                 $artistImage.attr('src', artistImagedata)
