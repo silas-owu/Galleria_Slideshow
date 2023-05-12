@@ -4,6 +4,9 @@ import galleriaData from '../public/data.json'
 
 $(function(){
     let currentIndex = 0;
+    const $progressBar = $('#progress-bar');
+
+
 
     
         const galleriaDataDisplay = () =>{
@@ -70,11 +73,16 @@ $(function(){
         $('#back-btn').on('click',()=>{
                 currentIndex = Math.max(currentIndex - 1, 0);
                 galleriaDataDisplay();
+                const progressPercentage = (currentIndex+1) * 6.667;
+                $progressBar.css('width', `${progressPercentage}%`);
+
         })
 
         $('#forward-btn').on('click',() => {
                 currentIndex = Math.min(currentIndex + 1, galleriaData.length - 1);
                 galleriaDataDisplay();
+                const progressPercentage = (currentIndex+1) * 6.667;
+                $progressBar.css('width', `${progressPercentage}%`);
         });
 
         galleriaDataDisplay();

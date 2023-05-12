@@ -2,7 +2,7 @@ document.querySelector('#footer').innerHTML = `
 
     <div class=" flex flex-col">
         <div class="relative bg-mercury w-full h-[0.0625rem]">
-            <div class="bg-black w-[1.5625rem] h-[0.0625rem]"></div>
+            <div id="progress-bar"  class="bg-black w-[1.5625rem] h-[0.0625rem]"></div>
         </div>
         <div class="flex flex-row mobile:my-4 border-2 border-dashed border-[#fa7f0c] mobile:mx-6 mobile:justify-between  mobile:h-[2.4375rem]" >
             <div class=" mobile:h-[2.375rem] mobile:flex mobile:flex-col mobile:gap-y-[0.5rem]">
